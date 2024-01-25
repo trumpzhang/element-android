@@ -324,4 +324,6 @@ dependencies {
     debugImplementation libs.androidx.fragmentTestingManifest
     androidTestImplementation libs.androidx.fragmentTesting
     androidTestImplementation "org.jetbrains.kotlin:kotlin-reflect:1.8.21"
+
+    // libyuv
 }

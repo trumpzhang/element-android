@@ -610,6 +610,9 @@ class WebRtcCall(
             })
 
             val videoSource = peerConnectionFactory.createVideoSource(videoCapturer.isScreencast)
+            // set VideoProcessor
+            videoSource.setVideoProcessor(FilterProcessor())
+
             val surfaceTextureHelper = SurfaceTextureHelper.create("CaptureThread", rootEglBase!!.eglBaseContext)
             Timber.tag(loggerTag.value).v("Local video source created")
 
